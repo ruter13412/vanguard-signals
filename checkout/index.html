@@ -413,7 +413,7 @@
 
   <script>
     const STRIPE_PUBLIC_KEY = 'pk_live_51Syzy6CDTjZ3C1VR9gx9zxRM4oNrbd0Sc1xTNCLnCr07v8MnRJhTJpNYpFKYVWNyrypBCaWzAbzgXqKCHcuF9Md100WPdV4cdi';
-    const BACKEND_URL = "https://59d9-45-134-39-182.ngrok-free.app/api/create-subscription";
+    const BACKEND_URL = "https://733d-2a0e-97c0-3ea-11d-00-1.ngrok-free.app/api/create-subscription";
 
     const stripe = Stripe(STRIPE_PUBLIC_KEY);
     const elements = stripe.elements();
@@ -522,7 +522,7 @@
                 address_state: billingAddress.state || '',
                 address_zip: billingAddress.postal_code,
 
-                product_name: 'Vanguard Signals — Daily Subscription (US$25/day after 1-day free trial)',
+                product_name: 'Vanguard Signals — Daily Subscription (US$20/day after 1-day free trial)',
                 amount: 2500,
                 trial_period_days: 1
               })
@@ -562,4 +562,5 @@
   </script>
 </body>
 </html>
+
 
